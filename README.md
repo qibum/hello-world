@@ -1,2 +1,0 @@
-# hello-world
-Learning started.
