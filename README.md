@@ -1,3 +1,5 @@
 # hello-world
 Learning started.
-** if a person can see it, then everybody can.
+
+**If a person can see it, then everybody can.**
+
