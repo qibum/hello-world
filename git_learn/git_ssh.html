@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SSH link to GIT</title>
+        <style>
+</style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+        
+    </head>
+    <body class="vscode-light">
+        <h1 id="ssh-link-to-git">SSH link to GIT</h1>
+<h2 id="question-how-to-link-local-git-repository-to-remote-github">Question: how to link local git repository to remote github?</h2>
+<p><strong>- generate a new ssh key</strong></p>
+<ol>
+<li>
+<p>open git bash</p>
+</li>
+<li>
+<blockquote>
+<p>$ ssh-keygen -t ed25519 -C &quot;<a href="mailto:your_email@example.com">your_email@example.com</a>&quot;</p>
+</blockquote>
+<p>This creates a new ssh key, using the provided email as a label.</p>
+<blockquote>
+<p>Generating public/private ed25519 key pair.</p>
+</blockquote>
+</li>
+<li>
+<p>When you're prompted to &quot;Enter a file in which to save the key,&quot; press Enter. This accepts the default file location.</p>
+<blockquote>
+<p>Enter a file in which to save the key (/c/Users/you/.ssh/id_ed25519):[Press enter]</p>
+</blockquote>
+</li>
+<li>
+<p>At the prompt, type a secure passphrase.</p>
+<blockquote>
+<p>Enter passphrase (empty for no passphrase): [Type a passphrase]</p>
+</blockquote>
+<blockquote>
+<p>Enter same passphrase again: [Type passphrase again]</p>
+</blockquote>
+</li>
+</ol>
+
+    </body>
+    </html>
