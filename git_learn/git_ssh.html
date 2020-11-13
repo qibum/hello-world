@@ -33,7 +33,8 @@
 </li>
 <li>
 <blockquote>
-<p>$ ssh-keygen -t ed25519 -C &quot;<a href="mailto:your_email@example.com">your_email@example.com</a>&quot;</p>
+<p>$ ssh-keygen -t ed25519 -C &quot;<a href="mailto:your_email@example.com">your_email@example.com</a>&quot;<br>
+(i used <a href="mailto:qbu@connect.ust.hk">qbu@connect.ust.hk</a>)</p>
 </blockquote>
 <p>This creates a new ssh key, using the provided email as a label.</p>
 <blockquote>
@@ -55,6 +56,35 @@
 <p>Enter same passphrase again: [Type passphrase again]</p>
 </blockquote>
 </li>
+</ol>
+<p><strong>- add ssh key to ssh-agent</strong></p>
+<ol>
+<li>start ssh-agent manually
+<blockquote>
+<p># start the ssh-agent in the background <br>
+$ eval $(ssh-agent -s)<br>
+&gt; Agent pid 59566</p>
+</blockquote>
+</li>
+<li>Add your SSH private key to the ssh-agent. If you created your key with a different name, or if you are adding an existing key that has a different name, replace id_rsa in the command with the name of your private key file.
+<blockquote>
+<p>$ ssh-add ~/.ssh/id_rsa<br>
+(my own key file: /c/Users/BU/.ssh/id_ed25519.pub)</p>
+</blockquote>
+</li>
+<li>add the ssh key to github account</li>
+</ol>
+<p><strong>- add a new ssh key to github account</strong></p>
+<ol>
+<li>copy the ssh key to clip board<br>
+If your SSH key file has a different name than the example code, modify the filename to match your current setup. When copying your key, don't add any newlines or whitespace.
+<blockquote>
+<p>$ clip &lt; ~/.ssh/id_rsa.pub<br>
+# Copies the contents of the id_rsa.pub file to your clipboard</p>
+</blockquote>
+</li>
+<li>In the upper-right corner of any page, click your profile photo, then click Settings.</li>
+<li></li>
 </ol>
 
     </body>
